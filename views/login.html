@@ -1,28 +1,55 @@
-<div class="modal fade" id="ModalForm1" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styleLogin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal fade modal-perro" id="ModalForm1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
 
-        <div class="myform bg-dark">
-          <h1 class="text-center">Iniciar sesión</h1>
+            <div class="myform bg-dark">
+              <h1 class="text-center">Iniciar sesión</h1>
 
-          <form action="controllers/inicioController.php" method="POST">
-            <div class="mb-3 mt-4">
-              <label class="form-label">Correo electronico</label>
-              <input type="email" required name="email" class="form-control">
+              <form action="controllers/inicioController.php" method="POST">
+                <div class="mb-3 mt-4">
+                  <label class="form-label">Correo electronico</label>
+                  <input
+                    type="email"
+                    required
+                    name="email"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    required
+                    name="contrasena"
+                    class="form-control"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-light mt-3">
+                  Ingresar
+                </button>
+              </form>
             </div>
-
-            <div class="mb-3">
-              <label class="form-label">Contraseña</label>
-              <input type="password" required name="contrasena" class="form-control">
-            </div>
-
-            <button type="submit" class="btn btn-light mt-3">Ingresar</button>
-          </form>
-
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
