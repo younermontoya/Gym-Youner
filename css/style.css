@@ -961,6 +961,9 @@ footer input[type="text"] {
   }
 }
 @media (max-width: 576px) {
+  :root{
+    overflow-x: hidden;
+  }
   main {
     width: 100%;
     background: #1f212c;
@@ -974,7 +977,6 @@ footer input[type="text"] {
   }
   nav.bg-gym {
     padding: 10px;
-    width: min-content;
   }
 
   #hero .cont-foto,
@@ -1089,25 +1091,5 @@ footer input[type="text"] {
   nav.bg-gym ul li {
     margin: 0 1px;
   }
-     #servicios {
-        margin: 0 0 0 20px;
-    }
-  #destacadas {
-    margin: 0 0 0 20px;
-  }
-  #planes {
-    margin: 0 0 0 20px;
-  }
-  #calcular {
-    margin: 0 0 0 20px;
-  }
-  #textoParrafo {
-    margin: 0 0 0 40px;
-  }
-  #tresTarjet {
-    margin: 0 0 0 20px;
-  }
-  #tarjetasTittle {
-    margin: 0 0 0 20px;
-  }
+
 }
